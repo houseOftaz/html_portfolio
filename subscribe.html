@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Contact me</title>
+    <link
+      rel="shortcut icon"
+      href="/public/image/logo/oz.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <nav role="navigation" aria-label="site's menu">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/profile.html">Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <nav class="breadcrumb">
+        <!--fil d'ariane, ol car l'odre compte pour le FA-->
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/profile.html">Profile</a></li>
+        </ol>
+      </nav>
+      <section>
+        <blockquote>
+          Please don't hesitate to contact me if you have any questions or
+          suggestions.
+          <cite>- Myself</cite>
+        </blockquote>
+      </section>
+
+      <section>
+        <h2>Contact ?</h2>
+        <form action="received.html">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="your name"
+            value=""
+            required
+          />
+
+          <label for="job">Job</label>
+          <input type="checkbox" id="job" name="job" required />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="your@email.com"
+            required
+          />
+
+          <label for="phone">Phone</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+33650174772"
+            required
+          />
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="write something here"
+            required
+          ></textarea>
+
+          <label for="password">Password</label>
+          <input type="password" name="password" required />
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <section>
+        <nav>
+          <ul>
+            <li>About</li>
+            <li>Help</li>
+            <li>Privacy & Terms</li>
+          </ul>
+          <img
+            src="/public/image/logo/oz.svg.ico"
+            alt="logo, oftaz en vert
+          sur fond noir souligné d'un trait vert plus large que le texte."
+            width="250"
+            height="250"
+            srcset="
+              /public/image/logo/oz.ico       480w,
+              /public/image/logo/devops.webp  960w,
+              /public/image/logo/devops.svg  1440w
+            "
+            sizes="(max-width: 480px) 100px,
+                   (max-width: 960px) 150px,
+                   (max-width: 1440px) 300px, 1920px"
+          />
+          <span>Copyright © <time datetime="2024">2024</time> Oftaz</span>
+        </nav>
+      </section>
+    </footer>
+  </body>
+</html>
