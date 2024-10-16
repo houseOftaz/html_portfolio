@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Contact me</title>
+    <title>Portfolio | Projects</title>
     <link
       rel="shortcut icon"
       href="/public/image/logo/oz.ico"
@@ -15,8 +15,8 @@
       <nav role="navigation" aria-label="site's menu">
         <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="/projects.html">Projects</a></li>
-          <li><a href="/profile.html">Profile</a></li>
+          <li><a href="/pages/profile.html">Profile</a></li>
+          <li><a href="/pages/contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -26,61 +26,24 @@
         <!--fil d'ariane, ol car l'odre compte pour le FA-->
         <ol>
           <li><a href="/">Home</a></li>
-          <li><a href="/projects.html">Projects</a></li>
-          <li><a href="/profile.html">Profile</a></li>
+          <li><a href="/pages/profile.html">Profile</a></li>
+          <li><a href="/pages/contact.html">Contact</a></li>
         </ol>
       </nav>
+
       <section>
         <blockquote>
-          Please don't hesitate to contact me if you have any questions or
-          suggestions.
+          Search by language if your curiosity is piqued.
           <cite>- Myself</cite>
         </blockquote>
       </section>
 
       <section>
-        <h2>Contact ?</h2>
+        <h2>What would you like to see ?</h2>
         <form action="received.html">
-          <label for="name">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="your name"
-            value=""
-            required
-          />
-
-          <label for="job">Job</label>
-          <input type="checkbox" id="job" name="job" required />
-
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="your@email.com"
-            required
-          />
-
-          <label for="phone">Phone</label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            placeholder="+33650174772"
-            required
-          />
-
-          <label for="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="write something here"
-            required
-          ></textarea>
-
-          <button type="submit">Send</button>
+          <label for="search">Search</label>
+          <input type="text" id="search" name="search" placeholder="Search" />
+          <button type="submit">Search</button>
         </form>
       </section>
     </main>

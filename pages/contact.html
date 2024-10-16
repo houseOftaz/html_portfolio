@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Anastasia Davoz</title>
+    <title>Portfolio | Contact me</title>
     <link
       rel="shortcut icon"
       href="/public/image/logo/oz.ico"
@@ -14,9 +14,9 @@
     <header>
       <nav role="navigation" aria-label="site's menu">
         <ul>
+          <li><a href="/">Home</a></li>
           <li><a href="/pages/projects.html">Projects</a></li>
           <li><a href="/pages/profile.html">Profile</a></li>
-          <li><a href="/pages/contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -25,27 +25,73 @@
       <nav class="breadcrumb">
         <!--fil d'ariane, ol car l'odre compte pour le FA-->
         <ol>
+          <li><a href="/">Home</a></li>
           <li><a href="/pages/projects.html">Projects</a></li>
           <li><a href="/pages/profile.html">Profile</a></li>
-          <li><a href="/pages/contact.html">Contact</a></li>
         </ol>
       </nav>
       <section>
         <blockquote>
-          As a future fullstack web developer, I aim to create modern and
-          enjoyable web experiences. My passion for learning and languages
-          drives me toward a career in cybersecurity or data science, where I
-          can continue to innovate and grow.
+          Please don't hesitate to contact me if you have any questions or
+          suggestions.
           <cite>- Myself</cite>
         </blockquote>
       </section>
 
       <section>
-        <h2>Why only HTML ?</h2>
-        <p>
-          I'm doing this project to check my level in HTML and practice new
-          things !
-        </p>
+        <h2>Contact ?</h2>
+        <form action="received.html">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="your name"
+            value=""
+            required
+          />
+
+          <label for="selectlist">Who are you ?</label>
+          <select name="selectlist" id="selectlist">
+            <option value="recruiter">Recruiter</option>
+            <option value="employee">Employee</option>
+            <option value="student">Student</option>
+          </select>
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="your@email.com"
+            required
+          />
+
+          <label for="phone">Phone</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+33650174772"
+            required
+          />
+
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" required />
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="write something here"
+            required
+          ></textarea>
+
+          <label for="file">File</label>
+          <input type="file" id="file" name="file" accept="image/*" />
+
+          <button type="submit">Send</button>
+        </form>
       </section>
     </main>
 
